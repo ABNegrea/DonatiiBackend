@@ -20,7 +20,7 @@ public class UserService implements IUserService {
     private final PasswordEncoder passwordEncoder;
 
     @Autowired
-    UserService(IUserRepository userRepository, PasswordEncoder passwordEncoder) {
+    public UserService(IUserRepository userRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
     }
